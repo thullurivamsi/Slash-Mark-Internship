@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vamsi Krishna — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">VK<span>.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="exp.html">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-greeting">Hello there</p>
+      <h1>Thulluri<br><em>Vamsi Krishna</em></h1>
+      <p class="hero-subtitle">Aspiring Full Stack Developer &amp; ML Enthusiast</p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects →</a>
+        <a href="social.html" class="btn btn-outline">Connect with me</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="images/profile1.webp" alt="Vamsi Krishna profile photo">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">VK.</span>
+    <p>© 2025 Thulluri Vamsi Krishna. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
