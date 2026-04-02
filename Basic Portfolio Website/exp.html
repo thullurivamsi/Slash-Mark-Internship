@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Vamsi Krishna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">VK<span>.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="exp.html" class="active">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="page-section">
+    <h2 class="section-title">Work <span>Experience</span></h2>
+    <p class="section-subtitle">My professional journey so far.</p>
+
+    <div class="exp-timeline">
+
+      <div class="exp-item">
+        <div class="exp-badge">📌 Internship</div>
+        <h3>Machine Learning Intern</h3>
+        <p class="company">Organisation · 2024</p>
+        <p>Developed and implemented machine learning models using Python on real-world datasets. Worked on data preprocessing, feature selection, and model evaluation. Built multiple projects involving prediction and data analysis, improving understanding of model performance and debugging techniques.</p>
+        <div class="exp-skills">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Data Preprocessing</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Model Evaluation</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">VK.</span>
+    <p>© 2025 Thulluri Vamsi Krishna. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
