@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social — Vamsi Krishna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">VK<span>.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="social.html" class="active">Social</a></li>
+        <li><a href="exp.html">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SOCIAL SECTION -->
+  <section class="page-section">
+    <h2 class="section-title">Find me <span>Online</span></h2>
+    <p class="section-subtitle">Let's connect — I'm always open to new conversations and collaborations.</p>
+
+    <div class="social-grid">
+
+      <a href="https://www.linkedin.com/in/vamsi-krishna-thulluri-122253291/" target="_blank" rel="noopener" class="social-card">
+        <div class="social-icon">
+          <img src="images/linkedin.png" alt="LinkedIn">
+        </div>
+        <div class="social-info">
+          <h3>LinkedIn</h3>
+          <p>Professional network &amp; career updates</p>
+        </div>
+        <span class="social-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/thullurivamsi" target="_blank" rel="noopener" class="social-card">
+        <div class="social-icon">
+          <img src="images/github.png" alt="GitHub">
+        </div>
+        <div class="social-info">
+          <h3>GitHub</h3>
+          <p>Source code &amp; open-source projects</p>
+        </div>
+        <span class="social-arrow">→</span>
+      </a>
+
+      <a href="https://leetcode.com/u/vamsi_thulluri/" target="_blank" rel="noopener" class="social-card">
+        <div class="social-icon">
+          <img src="images/leetcode.png" alt="LeetCode">
+        </div>
+        <div class="social-info">
+          <h3>LeetCode</h3>
+          <p>Problem solving &amp; DSA practice</p>
+        </div>
+        <span class="social-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">VK.</span>
+    <p>© 2025 Thulluri Vamsi Krishna. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
